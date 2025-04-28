@@ -1,0 +1,750 @@
+"Submission Timestamp","Submitter Slack Email","Slack Full Name","Slack Display Name",Software,"Título do Problema","Resposta ","Anexar Arquivo"
+2024-09-16T11:27:55Z,Anderson.A.Santos@grupoboticario.com.br,"Anderson Azevedo","Anderson Azevedo",SysPDV,"Título de Teste","Título de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de TesteTítulo de Teste",
+2024-09-16T11:30:05Z,Anderson.A.Santos@grupoboticario.com.br,"Anderson Azevedo","Anderson Azevedo",SysPDV,"Teste de Teste","Teste Teste Teste Teste Teste",
+2024-09-16T11:33:06Z,Anderson.A.Santos@grupoboticario.com.br,"Anderson Azevedo","Anderson Azevedo",varejofacil,"Teste Teste Teste Teste","Teste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste TesteTeste Teste Teste Teste",
+2024-09-17T18:59:13Z,gabriel.luan@grupoboticario.com.br,"Gabriel Luan Damascena Beserra","Gabriel Luan - 68020",SysPDV,"Falha de Schema em NFCe","Amigos (as),
+
+Ao se depararem com o erro Falha na autorização: 000 - Falha na validação de esquemas da nota: 463TAG:<pag><detPag><card> ID:YA05/CNPJ(CNPJ(MF)) - Tamanho menor que o mínimo permitido [xxxxxxxxxxx].1824 - Element '{http://www.portalfiscal.inf.br/nfe}CNPJ': '77676129532' is not a valid value of the atomic type '{http://www.por, necessário validar a seguinte questão:
+
+Esse erro se refere ao CNPJ da Integradora (Administradora), tag <tpIntegra>, portanto, para corrigir, basta que o cliente cadastre a Administradora corretamente, junto ao cadastro da Administradora como Cliente, insira a Administradora na Finalizadora, regere a NFCe como cadastro e a reenvie.
+
+Como o erro é inglês e genérico, achei validação compartilhar esse conhecimento.
+
+Ticket: https://grupocasamagalhaes.movidesk.com/Ticket/Edit/1367904",
+2024-09-18T12:36:28Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Entrada de nota CRT 4","Situação: Ao dar entrada de nota que vem com CRT 4 o Syspdv não permite a entrada, ocorre o erro:
+
+""Ocorreu um erro durante a conversão do XML com a seguinte mensagem: Conteúdo 4 é inválido para o campo CRT_C21 [Codigo de Regime Tributário]. Dica: Utilizar: 1-Simples Nacional / 2-Simples NAcional excesso de sublimite de receita bruta / 3-Regime Normal""
+
+Solução: Foi aberta a tarefa 554319 mas foi cancelada pois na época perceberam que não teria impacto em NFe. Estou enviando  novamente a tarefa para ser vinculada a mesma e reaberta. 
+
+Paliativo: Fazer o ajuste manual de estoque e quando for liberada a versão ser dada entrada na nota sem movimentar estoque.",
+2024-09-19T11:34:50Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Erro na carga","Situação: 
+
+Ao enviar a carga ocorre o erro:
+""Thread creation error. Espaço insuficiente de armazenamento para processar este comando"" mesmo havendo espaço em disco.
+
+Solução: Nos casos que peguei foi solucionado atualizando para 32982 ou acima dela pois há uma melhoria na carga.",
+2024-09-19T15:18:58Z,Anderson.A.Santos@grupoboticario.com.br,"Anderson Azevedo","Anderson Azevedo",SysPDV,"Criação de Fluxo de Base","Criação de Fluxo de Base",
+2024-09-23T11:48:37Z,gabriel.luan@grupoboticario.com.br,"Gabriel Luan Damascena Beserra","Gabriel Luan - 68020",SysPDV,"Erro ao Cadastrar Seção durante Cadastro de Produto","Nas builds atuais do SysPDV ao tentar cadastrar uma Seção durante o Cadastro do Produto, inserindo um código de Seção não cadastrado para que o SysPDV inicie o cadastro da mesma é retornado o ""Exception EAccessViolation in module SysPDV_server.exe"" e a aplicação do SysPDV Server fecha automaticamente.
+
+Esse erro não é do Windows, apesar de ser registrado como um erro de aplicação, e atualmente está sendo tratado via tarefa de número 1368783.
+
+Portanto, caso se deparem com esse erro será necessário apenas orientar o cliente a cadastrar a seção no cadastro de Seção (Cadastro > Produto > Classificação > Seção) e tatear à tarefa principal que está no ticket 1368783.",
+2024-09-24T12:57:57Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Arquivo geração balança mgv5/mgv6 não gerando com 6 digitos","Bom dia Galera!
+Compartilhar uma situação que peguei que era só um negocim, estava sendo gerado o arquivo para balança do syspdv e por mais que estivesse marcado 6 digitos nos parametros não ia com 6 digitos, somente com 5, o digito final não saia, após desmarcar a flag ""calcula digito etiqueta balança"" saiu normalmente com os 6 dígitos, vou deixar na thread um exemplo de como saída e do parâmetro que foi desmarcado.",
+2024-09-24T14:17:27Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Erro verifica índices","Erro no verifica índices:
+
+violation of FOREIGN KEY constraint ""FK_MOVIMENTACAO_ESTOQUE1"" on table ""ESTOQUE_MOVIMENTACAO"" Foreign key rederence target does not exist.
+
+Causa: 
+A causa é que tem informação na tabela filha (estoque_movimentacao) mas não tem na tabela mãe (estoque), o comando abaixo insere o código do produto na tabela mãe.
+
+Comando que corrige:
+insert into estoque(procod) select procod from produto where not exists (select 1 from estoque where estoque.procod=produto.procod)",
+2024-09-26T14:22:14Z,matheus.w.santos@grupoboticario.com.br,"Matheus Santos","Matheus Wesley - 68038",SysPDV,"Erro ao acessar o banco MOV/CAD no IBO do PDV Linux","Queridos, caso estejam enfrentando problemas ou erros na hora de acessar o banco do MOV ou CAD no caixa do cliente pois gera um erro como ""Cannot attach to services manager"", podemos criar uma nova instancia no IBO porem como um server remoto. Vou compartilhar o passo a passo nos comentários.",
+2024-09-26T15:30:14Z,jean.figueiredo@grupoboticario.com.br,"Jean Figueiredo","Jean Figueiredo - 68023",SysPDV,"Erro ao incluir Pedido de Venda e Orçamento","Ao incluir o Pedido de venda, o sistema retorna 'Registro não localizado!'.
+Solução - No parâmetro 591 - CLIENTE PADRAO estava com o código 001, onde na tabela de CLIENTE não tem esse registro, alterado para um código cadastrado, problema resolvido!.",
+2024-09-27T13:50:11Z,Anderson.A.Santos@grupoboticario.com.br,"Anderson Azevedo","Anderson Azevedo",SysPDV,"Validação de uma V2","Validação de uma V2 ",https://grupoboticario.enterprise.slack.com/files/U196V1MPS/F07PFQ8LK1A/screenshot_53.png
+2024-09-27T20:00:38Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"could not load xml Falha de validação: documento não contém exatamente um nó raiz. []","Boa tarde! :pepe-note:
+Erro ocorre na hora de emitir uma nota fiscal de saída, normalmente é algum caractere especial, no cadastro de cliente, produto, próprio, no caso que peguei foi feito 2 ajustes, um no produto com os caracteres <> e o outro no cadastro de cliente, que se você observar tem um espaço no número de telefone, após ajustes, foi refeito a nota fiscal e foi emitida com sucesso.","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07PU37TRFB/2024-09-24_10_04_36-.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07PHTAHER2/2024-09-24_10_04_04-.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07PFCLELRY/2024-09-24_10_05_40-.png"
+2024-09-28T19:06:57Z,matheus.w.santos@grupoboticario.com.br,"Matheus Santos","Matheus Wesley - 68038",SysPDV,"Impressora TP 550 não corta comprovante TEF","Em acesso foi verificado que o problema estava na parametrização do 500/. Como o cliente tinha 2 CAIXAS com o mesmo modelo de impressora, comparei com o caixa que estava funcionando e a configuração ficou da seguinte forma:",https://grupoboticario.enterprise.slack.com/files/U02KRP2S3DF/F07PL5SPJDS/500_impressora_tp_550_corte_tef.png
+2024-10-01T13:00:28Z,iasmyn.fernandes@grupoboticario.com.br,"Iasmyn Fernandes","Iasmyn Fernandes - 68112",SysPDV,"Codigo de Retorno MFE","Quero compartilhar com vocês esse site que encontrei que ele explica os códigos de retorno de mfe, até agora achei o mais completo
+https://baseg.com.br/231/codigos-de-retorno-sat/
+
+Caso prefiram, foi gerado o pdf",https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F07QJ01RADN/c__digos_de_retorno_mfe.pdf
+2024-10-01T13:50:12Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Varejo/SysPDV - Ao liquidar, aparece que foi liquidado, mas o valor continua em aberto, no varejo/syspdv","Bom dia! :pepe-note:
+Peguei um caso hoje e apareceu outro hoje, ocorre quando o cliente tem integração com varejo e o controle de cliente é no varejo, vou compartilhar aqui o problema e solução que funcionou no meu caso, ao utilizar a função de liquidar contas a receber no pdv 142/, você consegue liquidar normalmente, mas os valores continua em aberto, ao verificar as pendencias do contas a receber no varejofacil em (Financeiro - Contas a receber - Titulos a receber) vemos que aquele cliente em especifico tem uma transação pendente, logo acaba que não deixando liquidar por conta disso, após corrigir a pendência, normaliza a liquidação, lembrando que é bom orientar o cliente a sempre observar e procurar corrigir essas pendências, se alguém quiser complementar ou corrigir, pode ficar a vontade.  :pepelove:
+
+Créditos do bizu: @Ermeson de Oliveira Alves - 68099",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07Q85R3THP/v1.png
+2024-10-02T14:03:41Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Erro na geração da carga unavailable database Unsuccessful execution caused by an unavailable resource. Error Code: 55","Bom dia! :peepocoffee:
+Peguei um caso de banco SQL, com esse erro do titulo ao enviar carga, a solução no meu caso foi simples, bastou renomear a pasta TX  e reiniciar o serviço do sql via manager, caso no seu caso não funcione é bom verificar a questão dos pipes, criação de usuário, entre outras comunicações do SQL. :pepe-note:","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07Q4FDE38C/image__7_.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07Q20RTVDY/image__8_.png"
+2024-10-02T19:54:28Z,gabriel.luan@grupoboticario.com.br,"Gabriel Luan Damascena Beserra","Gabriel Luan - 68020",SysPDV,"Erro no SPED FISCAL:  Conteúdo do campo Inválido, registro 0200","Pessoal,
+
+Peguei uma situação curiosa que eu gostaria de compartilhar, caso se deparem com os erros ""Conteúdo do campo Inválido"" e ""O número de campos informado no registro difere do número de campos especificado no leiaute do arquivo."" no registro 0200 no SPED, e não identifiquem nada de incorreto com o cadastro de produto, referente aos campos indicados, sugiro que validem a descrição completa do produto.
+
+Pois peguei um caso onde devido a descrição do produto ser muito extensa e possuir o sinal ""|"" usado como separador de campos no SPED, a descrição desordenou os campos, fazendo com que o separador considerasse metade da descrição como Código de Barras e aí por diante, fazendo com que todos os campos ficassem incorretos.
+
+Solução foi ajustar a descrição do produto, que passou de ""PISO CLASSE A 75X75 RETIFIC.|POLIDO 75027 - ONIX BLACK - PISO CERAMICO ESMALTADO"" para apenas ""PISO CLASSE A 75X75"".
+
+Feito esse ajuste, não houve mais desordenamento de campos no SPED e o mesmo foi validado sem erros.
+
+obs.: Lembrando que o registro 0200 é referente ao cadastro dos produtos.
+
+Ticket: 1372624","https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F07Q43GBE2X/2024-10-02_16_41_14-grupo_casa_magalh__es_-_central_de_servi__os.png, https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F07QGS9HGPK/2024-10-02_16_31_42-.png"
+2024-10-04T12:43:12Z,Karlo.S.Ramos@grupoboticario.com.br,"Karlo Bruno Silva Ramos","Karlo Bruno - Diretos - 68012",SysPDV,"MF-e Elgin com Status Bloqueado.","Bom dia pessoal, peguei dois casos em o MF-e Elgin Smart está ficando bloqueado por conta de uma atualização, caso peguem é necessário aguardar o termino, pois ao concluir ele faz o reset e volta ao normal.","https://grupoboticario.enterprise.slack.com/files/U01M7L3SYN4/F07PZRLDNLF/ativador.png, https://grupoboticario.enterprise.slack.com/files/U01M7L3SYN4/F07QGSZRJ4U/elgin_1.png, https://grupoboticario.enterprise.slack.com/files/U01M7L3SYN4/F07R365GN2U/elgin_2.png"
+2024-10-04T20:08:27Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Erro ao enviar NF-e: Forbidden (403) - 'https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutoriz","Boa tarde! :pepe-party:
+Esse erro pode ser bastante coisa, mas no meu caso, foi feito várias verificações e só foi resolvido após fazer algo especifico, problema começou a ocorrer após instalação do novo certificado, na emissão de NFe, vou deixar o que fiz para caso alguém pegue , são coisas que podem resolver e deixar a solução que fiz que deu certo, detalhe que ele também estava abrindo uma tela do Windows de permissão.
+-Acessei o link do erro no navegador, peguei no webservices e o link puxava o certificado, não retornava nenhum erro de comunicação
+-Você conseguia acessar os sites da sefaz sem problema, consultar e baixar xml
+-O tls estava ok
+-Firewall tbm
+-Foi reinstalado dependecies
+-O server estava sendo executado como adm e estava com ip correto.
+-Foi reinstalado o certificado novamente
+-Algo que poderia ser feito, que iria fazer caso não desse certo, reiniciar rede/pc(não fiz)
+-Nada disso acima funcionou no meu caso, mas pode funcionar no seu, no meu caso só resolveu, após remover o certificado antigo e deixar somente o novo, reabri o syspdv e a emissão deu certo :pepe_thinking:
+
+Caso queira complementar/corrigir pode ficar a vontade :pepelove:",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07Q2BHPF3R/msg2.png
+2024-10-09T14:09:29Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Erro: TrasacaçãoDesabilit.","Bom dia! :peepocoffee:
+Esse erro ocorre ao passar o cartão Tricard no caixa, quando o cliente tem Sitef Local, vou deixar abaixo a solução, que foi repassada pelo nosso Mago dos Tef @Gleyson Queiroz - 68045 a uns tempos atrás, inclusive a solução está na planilha que ele montou aqui a https://docs.google.com/spreadsheets/d/1L8xQaH_FCFR8SV5i4QJWAKSDIACiGunt1pvCC9WwH_Q/edit?gid=0#gid=0 (planilha) caso queira da uma olhada, achei interessante compartilhar esse problema no canal geral.
+
+Não sei se todos já sabem, mas a partir da versão 7.0.7.9 o módulo Tricard permite desabilitar certas funcionalidades. Por padrão, tudo listado aqui abaixo sempre estará DESABILITADO se não houver uma configuração:
+
+• Modo de entrada digitado do cartão.
+• Pagamento de Fatura.
+
+No arquivo tricard.ini do diretório \sitef\config, adicionar como está abaixo:
+
+[Geral]
+DesabilitaDigitado=0
+DesabilitaPagamento=0
+
+Onde,
+=0 habilita
+=1 desabilita
+
+Normalmente usa-se igual a 1 para habilitar parâmetros do SiTef, mas dessa vez é justamente o contrário, então deixe igual a 0 se quiser que o pagamento de fatura funcione no PDV.
+
+Após a configuração reinicie o serviço do SiTef.","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07RGLQ7HR7/print_erro_transacaodesabilit..png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07R3UFBRL3/habilitar_pagamento_de_fatura_tricard_a_partir_da_vers__o_7.0.7.9.txt"
+2024-10-09T17:50:20Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Rejeição 934: Não informado valor do ICMS desonerado ou o Motivo de desoneração","Boa tarde! :pepe-note:
+
+Repassar caso que peguei agora dessa rejeição em uma nota de saída de venda cfop 5102, no meu caso, está quase tudo ok, faltou só um detalhe bem especifico que pode passar batido, cst estava ok, beneficio fiscal, alíquota, ficou faltando só marcar a flag ""Desoneração ICMS"" após marcar ela e refazer a nota foi emitida com sucesso , vou deixar também um link abaixo que explica mais sobre a rejeição e suas exceções, no meu caso estava ok, mas no seu pode entrar nas exceções ou ter algo a mais, caso deseje complementar, corrigir, podem ficar a vontade. :pepelove:
+
+https://oobj.com.br/bc/article/rejei%C3%A7%C3%A3o-934-n%C3%A3o-informado-valor-do-icms-desonerado-ou-o-motivo-de-desonera%C3%A7%C3%A3o-como-resolver-919.html (https://oobj.com.br/bc/article/rejei%C3%A7%C3%A3o-934-n%C3%A3o-informado-valor-do-[…]ado-ou-o-motivo-de-desonera%C3%A7%C3%A3o-como-resolver-919.html)","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07QYSFLYGN/rejei____o_934.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07QQUS4UKZ/produto1.png"
+2024-10-10T14:05:42Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Dica para agilizar processos no Movidesk","Bom dia Galera! :peepocoffee:
+Galera vou deixar aqui uma dica, que descobri recente :pepe-thinking:
+Mas vai que mais alguém como eu não sabia né? :pepe-note:
+
+Como utilizamos bastante as macros, no movidesk você consegue favoritar as macros, assim quando você vai clicar para utilizar as macros, ele vai listar as favoritas como primeiro na lista, vou deixar uns prints, para fazer o processo é bem simples, vale tanto para chat quanto para ticket  aberto via hermes, só ir na macro e clicar no simbolo que é uma seta para cada lado, clicando nele vai listar todas macros, depois só clicar na estrela na macro que você quer favoritar e com isso ela vai aparecer em primeiro na listagem, dica simples que vai facilitar a sua vida, principalmente vai evitar você de clicar errado as vezes :pepelaugh:.","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07RPDGPW73/macro2.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07R7SYNYCD/macro1.png"
+2024-10-11T14:10:12Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Servidor de homologação não foi configurado","Bom dia! :peepocoffee:
+Esse erro no meu caso ocorreu quando o cliente foi emitir uma nota fiscal própria e na configuração de integração nfe/nfse estava marcado para emitir por contingencia, após ajustar para emissão normal, a nota foi emitida com sucesso, molezinha :pokemonwooper:","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07RE69EVKP/erro.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07RGUWBE6P/print2.png"
+2024-10-15T20:46:13Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Rotina proteção de tela não aparece","Boa tarde! :pepe_lubi:
+Repassar esse bizuzim que as vezes pode te fazer perder uns cabelo e tempo, peguei esse caso, que o cliente era O&M e a rotina, Cadastro > Caixa > Proteção de Tela não aparecia, mesmo sendo liberada para versão do cliente, esse caso também pode acontecer quando é colocado uma chave errada e ela passa, então é bom validar também, o que não foi o meu caso, o meu a rotina não aparecia nem na tabela MENU, então foi feito um backup do server e feito o insert somente da rotina de proteção de tela, após insert rotina apareceu normalmente, lembrando que esse caso pode ocorrer em outras rotinas, então é bom antes validar a chave se bate com a ultima gerada com milenio você verifica lá na PRPCHV na tabela PROPRIO, a versão do syspdv, existem varias, conforme o doc menu syspdv mostra, light, simples, O&M, tudo estando ok, é bom validar a tabela MENU, caso não conste só fazer o insert.
+
+Caso queira contribuir ou corrigir pode ficar a vontade :pepelove:","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07RXMR3MHT/print1.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07RL1HN32B/menu_syspdv__2_.pdf, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07RXMWN18D/imagem2.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F07RL1X8AVD/insert_prote____o_de_tela.sql"
+2024-10-16T13:43:23Z,iasmyn.fernandes@grupoboticario.com.br,"Iasmyn Fernandes","Iasmyn Fernandes - 68112",SysPDV,"Remoção de caixa de Modo de contingência - NFCE","Muitas vezes o mfe perdeu a comunicação, o cliente mesmo já resetou e voltou a comunicar, mas o caixa fica preso na opção de NFCE.
+Um passo a passo que podemos orientar o cliente fazer, que pode diminuir os chamados dos clientes para esse problema é orientar:
+
+1º Cancelar cupom 125/
+2º Salvar cupom 128/ com essa função uma vez que foi salvo, você pode puxar o cupom em qualquer outro caixa!
+3º Alterar 500/ para opção 3 - CFE
+4º Reiniciar a aplicação do Syspdv 101/
+5º Puxar cupom novamente no 129/
+6º Finalizar cupom
+
+Obs. Antes de tudo é orientado verificar qual finalizadora foi utilizada para finalizar cupom, se foi no TEF, precisa primeiro efetivar a venda diretamente no ambiente do Sitef (pois as vezes é liberado o cliente antes de autorizar o cupom e a venda fica pendente) e quando for puxar o cupom novamente para finalizar a venda, finalizar na pos para controle interno.
+
+Estou sempre passando isso pros clientes e vejo que gostam, pois eles mesmos conseguem resolver sem precisar ligar.","https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F07SHCCCWAD/nfce.png, https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F07S4K2SZPV/remo____o_de_caixa_de_modo_de_conting__ncia_-_nfce.pdf"
+2024-10-16T19:18:37Z,matheus.w.santos@grupoboticario.com.br,"Matheus Santos","Matheus Wesley - 68038",SysPDV,"Erro ao Consultar NFe: ""A conexão com o servidor foi reconfigurada""","Estou compartilhando esse caso pois o processo convencional não funcionou:
+
+Convencional?!
+1. Configurar o novo IP
+2. Importar os WEBSERVICES
+3. Reiniciar o SysPDV Server e tentar novamente
+Pois é, isso ali não funcionou para mim e pode ser que não funcione rsrsr...
+
+Neste caso segue o passo a passo:
+1. Limpar a tabela WEBSERVICES pelo banco
+2. Abrir o SysPDV Server e realizar a importação dos WEBSERVICES novamente.
+3. Fechar e abri o SysPDV e tentar novamente autorizar a NFE
+Ticket com todo processo realizado https://grupocasamagalhaes.movidesk.com/Ticket/Edit/1376672https://grupocasamagalhaes.movidesk.com/Ticket/Edit/1376672 ( ), btw! Hehe",https://grupoboticario.enterprise.slack.com/files/U02KRP2S3DF/F07S07UNW78/erro_enviar_nfe.png
+2024-10-18T15:44:26Z,Samia.A.Moura@grupoboticario.com.br,"Samia Gabriela Almeida Moura","Sâmia Gabriela - 68048",varejofacil,"Divergência de vendas entre SysPDV e VarejoFacil: Guia detalhado para resolução.","Divergência de vendas entre SysPDV e VarejoFacil: Guia detalhado para resolução.
+
+Este guia detalhado te auxiliará a identificar e corrigir divergências de vendas entre o SysPDV e o VarejoFacil. Siga os passos abaixo:
+
+1. Verificação Inicial:
+
+Loja Online: Certifique-se de que a loja em questão esteja online e operando normalmente em ambos os sistemas.
+
+2. Identificando a Divergência:
+
+Comparação de Painéis:
+
+Acesse o painel de vendas online no SysPDV e no VarejoFacil.
+No SysPDV: Vá em Vendas > Acompanhamento de vendas > Painel de vendas. Selecione a loja, o dia desejado e clique em “Atualizar”.
+No VarejoFacil: Vá em Venda > Relatórios Vendas > Resumo de vendas. Selecione a loja e o dia.
+Compare os valores apresentados em ambos os painéis para identificar a divergência.
+
+Relatórios Detalhados:
+Utilize os relatórios de resumo de vendas em ambos os sistemas, filtrando por caixa.
+No SysPDV: Acesse Relatório > Resumo de vendas e filtre por caixa.
+No VarejoFacil: Acesse Venda > Relatórios Vendas > Resumo de vendas e filtre por loja e caixa.
+Compare os relatórios detalhados para identificar a origem da divergência.
+
+3. Corrigindo Divergências 
+
+Reenvio de Vendas:
+Acesse o(s) caixa(s) com vendas a menor no VarejoFacil.
+Utilize a função 820/ para reenviar as vendas faltantes.
+
+4. Divergência Persistente - Exclusão e Reenvio de Vendas (Varejofacil):
+
+Exclusão de Vendas:
+No VarejoFacil, acesse Frente de Loja > Manutenção > Exclusão de vendas.
+Exclua as vendas do caixa e dia com divergência.
+
+Reenvio de Vendas via banco de dados:
+
+Execute o seguinte comando para reenviar as vendas:
+update transacao set trnlogweb = 'A' where trndat = '17.10.2024' and cxanum = '004';
+Atenção: Substitua 17.10.2024 pela data e 004 pelo número da caixa corretos.
+
+Verificação de Transações Reenviadas:
+Utilize o seguinte comando SQL para verificar se as transações foram reenviadas com sucesso:
+select count (*) from transacao where trnlogweb = 'A' and trndat ='17.10.2024' and cxanum = '004';
+Atenção: Substitua 17.10.2024 pela data e 004 pelo número da caixa corretos.
+
+Comparação Final:
+Após o reenvio, repita o passo 2 para comparar os dados e confirmar a correção da divergência.
+Observações Importantes:
+
+Este guia fornece um procedimento geral. Ajustes podem ser necessários dependendo da versão do sistema e da configuração específica da loja.
+
+Realize backups dos dados antes de efetuar qualquer procedimento crítico.
+
+Ao seguir este guia detalhado, você estará apto a identificar e corrigir divergências entre o SysPDV e o Varejofacil de forma eficiente. Lembre-se de sempre priorizar a segurança dos dados e buscar auxílio caso tenha dúvidas no decorrer do processo.
+
+
+Obs.: Caso tenha algo a acrescentar sinta-se à vontade.","https://grupoboticario.enterprise.slack.com/files/U01DWMKM7GW/F07SBVA9QCW/painel_sys.png, https://grupoboticario.enterprise.slack.com/files/U01DWMKM7GW/F07SFNE74CV/painel_varejo.png"
+2024-10-25T16:18:14Z,Antonio.Neirton@grupoboticario.com.br,"Neirton Oliveira","Neirton Oliveira - 68096",varejofacil,"Solicitalçao de artigo sobre o relatório de rendimento e produção.","Boa tarde, precisamos de um artigo onde cada campo dos relatórios são devidamente explicados com os cálculos realizados pelo varejofacil para chegar nos resultados exibidos no relatório, no menu, estoque>relatórios>rendimento.",https://grupoboticario.enterprise.slack.com/files/U02GJ43D74Y/F07TCF293P0/image_75846789431729865676228.png
+2024-10-28T13:40:30Z,jose.b.santos@grupoboticario.com.br,"Jose Santos","José Iwayner - 68022",varejofacil,"org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing: br.com.syspdv.model.notafiscal.ConhecimentoDeTransporte.municipioDestino -> br.com.syspdv.model.Municipio; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing: br.com.syspdv.model.notafiscal.ConhecimentoDeTransporte.municipioDestino -> br.com.syspdv.model.Municipio","Hoje tive duas ocorrências de erros relacionadas a rotina de transporte, em uma delas foi identificado erro relacionada a parte de município,  a cliente não tinha costume de informar esses dados, porém na versão 46850 foi implementada a tarefa 1089625 (Implementado na tela de compras de Conhecimento de Transporte as opções para informar os códigos de Município de Início e Fim do Transporte para envio ao Arquivo SPED Fiscal.), caso peguem erro relacionado, deve-se informar a UF e Município de origem e destino, assim irá corrigir.",https://grupoboticario.enterprise.slack.com/files/U01PFJ8LAM7/F07TVC8USSY/1730120932304.png
+2024-11-01T18:39:04Z,Karlo.S.Ramos@grupoboticario.com.br,"Karlo Bruno Silva Ramos","Karlo Bruno - Diretos - 68012",SysPDV,"Teclado trava para digitação da senha do Funcionário","Cliente entrou em contato falando que após configurar um Scanner no PDV, ao tentar digitar a senha no teclado, ele travava, em acesso ao PDV aparentemente estava tudo normal, quando desabilitava o Scanner na configuração do PDV a senha no digitada no teclado funcionava, acessei o server e verifiquei nos parâmetros da aba periféricos que a digitação da senha do funcionário estava parametrizado para o Scanner, alterei e passei carga para permitir pelo teclado.
+É até algo simples, mas que podemos perder um tempinho analisando.",https://grupoboticario.enterprise.slack.com/files/U01M7L3SYN4/F07UJAZJD0S/1730485743223.png
+2024-11-07T12:06:04Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,Inventário,"Existem algumas situações que o Syspdv não gera o inventário automático do fim do mês. Na maioria das vezes é porque não foi feito o fechamento diário.
+
+Nesses casos por via de regra informamos para o cliente que devido ao erro operacional dele de não fazer o fechamento diário dele o Syspdv não gerou e caso a contabilidade autorize ele pode estar usando um inventário de um outro mês próximo.
+
+Porém algumas vezes é aberta exceção e geramos aquele inventário retroativo via comando, abaixo vou compartilhar as duas formas de aplicar o comando e gerar esse inventário passado que não foi gerado.
+
+:setadireita: Forma 1
+
+Primeiro deve-se fazer o backup. Abaixo os 2 scripts:
+
+Cria a linha na tabela INVENTARIO:
+
+Obs.: O que estiver em negrito é o que deve ser alterado para a realidade do cliente que são o número do inventário (Coloque o próximo número disponível) e a data. Perceba que no primeiro comando é inserido a data exata (31/12/2022) e no segundo comando com 1 dia a mais (01/01/2023).
+
+INSERT INTO INVENTARIO (
+	IVESEQ
+	,FORCOD
+	,SECCOD
+	,IVEDATABE
+	,IVELOCCOD
+	,IVEHORABE
+	,IVEOBS
+	,IVEFECZER
+	,IVEMOTIVO
+	,IVEDATFEC
+	,IVEHORFEC)
+	VALUES(
+	'000095'
+	,'0000'
+	,'00'
+	,(datetime, '31.12.2022')
+	,'00'
+	,'0917'
+	,'Gerado automaticamente pelo SysPDV(Via Comando)'
+	,'N'
+	,'01'
+	,(datetime, '31.12.2022')
+	,'0917')
+
+
+Alimenta a tabela ITEMINVENTARIO:
+
+INSERT INTO ITEMINVENTARIO (
+	IVESEQ
+	,PROCOD
+	,IVIQTDCJG
+	,IVIQTDCJGLOC2
+	,IVIQTDCJGLOC3
+	,IVIQTDCJGLOC4
+	,IVIQTDCJGLOC5
+	,IVIQTDINV
+	,IVIQTDINVLOC2
+	,IVIQTDINVLOC3
+	,IVIQTDINVLOC4
+	,IVIQTDINVLOC5
+	,IVIPRCCST
+	,IVIPRCCSTFIS
+	,IVIPRCCSTMED
+	,IVIPRCVDA
+	)SELECT '000095'
+	,PRODUTO.PROCOD
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '01' ) AS QTD1CJG
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '02' ) AS QTD2CJG
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '03' ) AS QTD3CJG
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '04' ) AS QTD4CJG
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '05' ) AS QTD5CJG
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '01' ) AS QTD1
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '02' ) AS QTD2
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '03' ) AS QTD3
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '04' ) AS QTD4
+	,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD  AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/01/2023' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '05' ) AS QTD5
+	,COALESCE(COALESCE(CUSTO.CSTREP, CUSTO.CSTREPFSC),0) AS CSTREP
+	,COALESCE(COALESCE(CUSTO.CSTFIS, CUSTO.CSTFISFSC),0) AS CSTFIS
+	,COALESCE(COALESCE(CUSTO.CSTMED, CUSTO.CSTMEDFSC),0) AS CSTMED
+	,PRODUTO.PROPRCVDAVAR
+FROM PRODUTO
+LEFT OUTER JOIN PRODUTO_FORNECEDOR ON (
+		PRODUTO.PROCOD = PRODUTO_FORNECEDOR.PROCOD
+		AND PRODUTO_FORNECEDOR.PRFNIVEL = 'P'
+		)
+LEFT OUTER JOIN CUSTO ON (PRODUTO.PROCOD = CUSTO.PROCOD)
+WHERE 1 = 1
+	AND COALESCE(PRODUTO.PROCTREST, 'N') = 'S'
+GROUP BY PRODUTO.PROCOD
+	,COALESCE(CUSTO.CSTREP, CUSTO.CSTREPFSC)
+	,COALESCE(CUSTO.CSTFIS, CUSTO.CSTFISFSC)
+	,COALESCE(CUSTO.CSTMED, CUSTO.CSTMEDFSC)
+	,PRODUTO.PROPRCVDAVAR
+
+
+
+
+Essa primeira forma não deu certo comigo, precisei adaptar o comando para dar certo, ficou assim:
+
+:um:
+
+INSERT INTO INVENTARIO (
+    IVESEQ
+    ,FORCOD
+    ,SECCOD
+    ,IVEDATABE
+    ,IVELOCCOD
+    ,IVEOBS
+    ,IVEFECZER
+    ,IVEMOTIVO
+)
+    VALUES(
+    '000162',
+    '0000',
+    '00',
+    CONVERT(DATETIME, '30.06.2022', 104),
+    '00',
+    'Gerado automaticamente pelo SysPDV(Via Comando)',
+    'N',
+    '01'
+    )
+------------------------------------------------------------------------------------------------
+:two:
+
+update INVENTARIO set IVEHORABE='0819' where IVESEQ='000162'
+
+------------------------------------------------------------------------------------------------
+
+:three:
+
+UPDATE INVENTARIO SET IVEDATFEC = CONVERT(DATETIME, '2024-06-30 00:00:00.000', 121) WHERE IVESEQ = '000162';
+
+------------------------------------------------------------------------------------------------
+:four:
+
+update INVENTARIO set IVEHORFEC='0820' where IVESEQ='000162'
+
+------------------------------------------------------------------------------------------------
+:five:
+
+INSERT INTO ITEMINVENTARIO (
+    IVESEQ
+    ,PROCOD
+    ,IVIQTDCJG
+    ,IVIQTDCJGLOC2
+    ,IVIQTDCJGLOC3
+    ,IVIQTDCJGLOC4
+    ,IVIQTDCJGLOC5
+    ,IVIQTDINV
+    ,IVIQTDINVLOC2
+    ,IVIQTDINVLOC3
+    ,IVIQTDINVLOC4
+    ,IVIQTDINVLOC5
+    ,IVIPRCCST
+    ,IVIPRCCSTFIS
+    ,IVIPRCCSTMED
+    ,IVIPRCVDA
+    )SELECT '000162'
+    ,PRODUTO.PROCOD
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '01' ) AS QTD1CJG
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '02' ) AS QTD2CJG
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '03' ) AS QTD3CJG
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '04' ) AS QTD4CJG
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '05' ) AS QTD5CJG
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '01' ) AS QTD1
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '02' ) AS QTD2
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '03' ) AS QTD3
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '04' ) AS QTD4
+    ,(SELECT COALESCE(SUM(MOVQTD),0.000) FROM ESTOQUE_MOVIMENTACAO WHERE ESTOQUE_MOVIMENTACAO.PROCOD = PRODUTO.PROCOD AND ESTOQUE_MOVIMENTACAO.MOVDAT < '01/07/2022' AND ESTOQUE_MOVIMENTACAO.LOCCOD = '05' ) AS QTD5
+    ,COALESCE(COALESCE(CUSTO.CSTREP, CUSTO.CSTREPFSC),0) AS CSTREP
+    ,COALESCE(COALESCE(CUSTO.CSTFIS, CUSTO.CSTFISFSC),0) AS CSTFIS
+    ,COALESCE(COALESCE(CUSTO.CSTMED, CUSTO.CSTMEDFSC),0) AS CSTMED
+    ,PRODUTO.PROPRCVDAVAR
+FROM PRODUTO
+LEFT OUTER JOIN PRODUTO_FORNECEDOR ON (
+        PRODUTO.PROCOD = PRODUTO_FORNECEDOR.PROCOD
+        AND PRODUTO_FORNECEDOR.PRFNIVEL = 'P'
+        )
+LEFT OUTER JOIN CUSTO ON (PRODUTO.PROCOD = CUSTO.PROCOD)
+WHERE 1 = 1
+    AND COALESCE(PRODUTO.PROCTREST, 'N') = 'S'
+GROUP BY PRODUTO.PROCOD
+    ,COALESCE(CUSTO.CSTREP, CUSTO.CSTREPFSC)
+    ,COALESCE(CUSTO.CSTFIS, CUSTO.CSTFISFSC)
+    ,COALESCE(CUSTO.CSTMED, CUSTO.CSTMEDFSC)
+    ,PRODUTO.PROPRCVDAVAR
+
+
+Fico a disposição :wink:",https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F07V6SF7X3P/sat.dll
+2024-11-07T19:25:48Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,Comnect,"Informação:
+
+Para funcionamento da Comnect no PDV é necessário que as portas 5019 / 4096 estejam liberadas.
+
+Caso o cliente use internet Starlink as mesmas já bem bloqueadas por padrão e é necessário solicitar o bloqueio.",https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F07V5K1NLKG/sat.dll
+2024-11-13T20:17:18Z,gabriel.luan@grupoboticario.com.br,"Gabriel Luan Damascena Beserra","Gabriel Luan - 68020",SysPDV,"Emissão de NFe para Destinatários do DF","Ao emitir uma NF para Destinatários do DF, deverá ser utilizado o número do CF DF (Cadastro Fiscal Distrito Federal) ao invés da IE, devido a uma particularidade do próprio DF onde os contribuintes não possuem IE.
+
+Portanto, no cadastro do cliente deverá ser inserido no campo de IE o CF DF (com o zero à esquerda) que pode ser localizado no portal do Sintegra do DF, buscando pelo CNPJ do cliente.
+
+https://ww1.receita.fazenda.df.gov.br/icms/sintegra-consulta",https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F080BBHBBHV/cf_df.png
+2024-11-26T21:04:03Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Dica sobre erros que ocorre no pdv","Boa noite!
+Deixando essa dica aqui, pois pode ajudar a entender melhor o problema, quando aparecer esse not found ou unknown, tem como saber o que está ocorrendo com aquela tabela ou conula.
+
+Not Found -> Quando está faltando no banco do PDV sendo no CAD ou MOV.
+Unknown -> Quando está faltando no SRV
+
+Deixar um exemplo de erro que ocorre no server que no caso era a coluna faltando, após fazer o insert deu certo.
+
+
+créditos @Gleyson Queiroz - 68045",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F0839EH6XGQ/erro.png
+2024-11-26T21:22:38Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Erro ao rodar atualiza recriando","Boa noite!
+Esse erro ocorre ao rodar atualiza recriando banco, no meu caso ocorreu na 33266
+
+Atualiza Syspdv Server build 33266 - Recriando banco retornou erro, trava na ACESSO_API, prints na thread
+
+Dynamic SQL Error
+SQL error code = -204
+Implementation limit exceeded
+block size exceeds implementation restriction
+
+Base zerada também ocorre o mesmo problema, fiz um teste dropando a tabela ACESSO_API, deixou dropar sem problema, o atualiza rodou sem erro após dropar, ele criou novamente a tabela, e ao rodar novamente o atualiza recriando erro voltou a ocorrer, então na minha base normal dropei e rodei recriando, foi sem erro, caso ocorra em cliente como paliativo, exportar um insert pra depois de dropar, caso cliente utilize as informações fazer o update, caso pegue algum caso com cliente seria interessante também validar se já existe tarefa sobre, caso não abrir.",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F082E4SNU78/acesso_api.png
+2024-11-28T14:46:19Z,gabriel.luan@grupoboticario.com.br,"Gabriel Luan Damascena Beserra","Gabriel Luan - 68020",SysPDV,"Emissão de Nota Fiscal (Falha de Esquema: O elemento pai: 'prod' não estava esperando o elemento 'qTrib'.)","Pessoal, durante a emissão de uma NFe, caso se deparem com o erro ""O arquivo contém 1 ou mais erros no de validação de esquema O elemento '{http://www.portalfiscal.inf.br/nfe}qTrib' não é esperado, de acordo com o modelo de conteúdo."" e ao validarem o Xml seja retornado o erro ""Falha de Esquema: O elemento pai: 'prod' não estava esperando o elemento 'qTrib'."" para corrigir é bem simples, é necessário apenas validar no cadastro dos produtos da NFe, aba Informações os campos Unidade Tributária e Quantidade Tributária, ambos devem estar devidamente preenchidos, ao corrigi-los é necessário apenas regerar a NFe e reenviar.","https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F083K7KBEPJ/produto.png, https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F082YUQP6G4/erro_de_schema.png, https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F082YUS1E3E/nfe.png"
+2024-11-28T21:51:22Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"NFCE Ativando a contingência ao finalizar vendas em tef","Boa noite!
+
+Peguei esse caso curioso, vou deixar aqui caso alguém pegue, vou deixar um vídeo do problema, mas resumindo, ao fazer qualquer venda em tef, o pdv efetivava como contingência, mesmo ela estando desativada, também não ocorria nenhum erro na tela, após verificar logs, foi visto que na verdade estava dando a rejeição, Rejeição 392: Não informados os dados da operação de pagamento por cartão de crédito/débito, abaixo vou deixar o caminho dos logs que poderia validar essa rejeição
+
+C:\Syspdv\Log\PDV - arquivo solto txt
+C:\Syspdv\Docs - arquivo xml, em um deles mostra rejeição
+Monitoramento nfce também poderia ser visualizado.
+
+-Cliente utilizava tef de terceiros, mas já tinha sido validado que estava tudo ok por parte da empresa de tef, foi então verificado que no cadastro das finalizadoras de tef, estava com cadastro da administradora sem nada, após ser feito cadastro da administradora, corrigir no cadastro de finalizadora, enviado carga , reiniciado aplicação, após efetuar um novo teste, efetivou sem problema nenhum, então a rejeição estava ocasionando a contingência, não ocorria nenhum erro na tela , só foi possível ver via logs.
+
+Resumo solução: cadastrar administradora(cadastrar a que o cliente roteia os cartões), alimentar no cadastro de finalizadora, enviar carga , reiniciar aplicação após receber carga, efetuar teste",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F083AA9E7LH/video_2024-11-28_152918.wmv
+2024-11-29T13:21:26Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SITEF,"Finalizadora pix não deixa habilitar na ativa tef a opção de tef","Bom dia!
+Algo simples, mas que pode lhe fazer quebrar a cabeça pois é algo novo, peguei um caso de uma finalizadora PIX TEF que não estava permitindo habilitar a flag TEF na ativa tef, foi visto que no cadastro daquela finalizadora a espécie estava como PIX Estático, logo por isso não permitia marcar a flag, após alterar para PIX dinâmico permitiu sem problemas alterar a flag.
+
+Vou deixar abaixo uma explicação que o nosso amigo @Gleyson Queiroz - 68045 mandou uma vez, top
+
+:setadireita0: PIX dinâmico é o que a gente usa no PDV, quando tem PIX integrado pelo Sitef. Ele é dinâmico, porque para cada transação aquele QrCode é único.
+
+:setadireita0: PIX estático é quando o consumidor paga pelo PIX da loja, ou seja, passa por fora do Sitef, similar o que ocorre com o POS. Quando o Sitef tá fora, passamos os cartões no POS.",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F083D5BF789/image.png
+2024-12-03T13:48:23Z,Manuel.M.Queiroz@grupoboticario.com.br,"Manuel Queiroz","Gleyson Queiroz - 68045",SysPDV,"Erro na validação do arquivo de remessa - Tamanho Registro 1 inválido [cobrebem]","Bom dia! :blush:
+
+:loading-2: Alguns clientes ainda podem usar o cobrebem, então estarei compartilhando a seguir um caso que peguei recentemente. → Um cliente entrou em contato com problemas na importação do arquivo de remessa, no sistema do banco Itaú dava a seguinte mensagem: Tamanho do Registro 1 invalido.
+
+:pepe-note: Ao analisar o layout do arquivo de remessa, identifiquei que o problema era a falta do dígito verificador da conta corrente, mesmo ele estando preenchido no cadastro da conta não ia no arquivo.
+
+:pepehacker: Após análise interna, descobri que, para o cobrebem, o dígito da conta deve ser inserido dentro do campo da conta corrente, enquanto no boleto direto, é no campo DV. Rotina: Financeiro>>Tesouraria>>Conta Corrente
+
+:thinking_face: Vocês podem se perguntar como cheguei a essa conclusão, no banco de dados do servidor existe uma tabela chamada versao_historico, fui fazendo o downgrade das builds até chegar na build 28096 e ver que a tela da rotina de conta corrente era diferente, não tinha o campo DV, então fiz o teste na versão atual do cliente inserindo o dígito junto da conta corrente, o resto vocês já sabem.
+
+:warning: Obs.: Lembrando que, se o cliente perder o arquivo .conf da licença do cobrebem, não será mais possível gerar o arquivo, pois a empresa encerrou suas atividades.
+
+Aproveito para agradecer o apoio da @Dayse lopes - 68049 e do @Luiz Claudio - 68025 pelos esclarecimentos sobre a rotina. :meow_heart1:","https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F083HEFUKFW/1733168046095.png, https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F083EVAGGJE/cobranca_cnab_400_empresas_jul-2024.pdf, https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F083F0YB18A/screenshot_3.png"
+2024-12-09T19:31:14Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"violation of PRIMARY or UNIQUE KEY constraint “INTEG_988” on table “ENTRADA”","Boa tarde!
+O erro violation of PRIMARY or UNIQUE KEY constraint “INTEG_988” on table “ENTRADA” ocorreu ao gravar uma nova fiscal própria, para corrigir é bem simples, basta verificar se tem outra nota já existente emitida/entrada, verifica no fornecedor utilizado no próprio e pelo número da nota gerado na rotina, no meu caso para corrigir, bastou ajustar o número sequencial da série de emissão e após reabrir rotina de nota própria e refazer, gerou com sequencial correto","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F083WSD4RJB/image__17_.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F084BCK1YTC/nota.png"
+2024-12-09T20:51:03Z,ermeson.alves@grupoboticario.com.br,"Ermeson Alves","Ermeson de Oliveira Alves - 68099",SITEF,"Erro de comunicação:40905: Ao tentar registrar o 620/ no caixa, quando o cliente tem SITEF TLS pode apresentar o seguinte erro: ""Erro de comunicação:40905""","Como corrigir: fechar o PDV, renomear a pasta c:\clisitef\NaoExcluirControleCliSitef solicitar um novo token ao adm, registrar o novo token no arquivo CONFIGTLS.ini, abrir o PDV e executar a função 620/ novamente",https://grupoboticario.enterprise.slack.com/files/U02J6JC9QH3/F084567QKLN/sitef.png
+2024-12-11T12:37:14Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Rejeição 965: Valor do troco acima do permitido","Bom dia!
+Essa correção são para casos de que a rejeição consta no monitoramento nfce, e cliente precisa corrigir para reenvio do cupom para sefaz, o ideal caso pegue no caixa é efetuar o cancelamento do cupom e refazer a transação.
+Essa rejeição ocorre quando operador finaliza a venda com um valor bem acima do valor permitido, ela emite mas quando chega no monitoramento da a rejeição.
+
+Para isso precisa ajustar o valor na tabela FINALIZAÇÃO, nas colunas FZDCTRVAL e FZDVLR
+
+- FZDVLR é para contar o valor total do cupom
+- FZDCTRVAL é para constar o valor do troco
+
+No caso para corrigir basta zerar o valor da FZDCTRVAL que é o valor do troco e na FZDVLR você coloca o valor real do cupom, quando você verificar na tabela FINALIZAÇÃO ambas vão estar com valor bem alto, vou deixar também comandos abaixo caso precise, ideal também orientar a ter cuidado na hora de finalizar a venda e caso operador coloque o valor errado, refazer a venda para evitar problemas futuros.
+
+-Consulta da transação na finalização
+select * from FINALIZACAO where CXANUM='xxx' and trnseq = 'xxxxxx'
+
+-Ajustar o valor do troco para zero
+update FINALIZACAO set FZDCTRVAL='x.xx' where CXANUM='xxx' and trnseq = 'xxxxxx'
+
+
+-Ajustar valor da finalização para valor total do cupom
+update FINALIZACAO set FZDVLR='xxx.xx' where CXANUM='xxx' and trnseq = 'xxxxxx'",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F084F4W4Y86/rejei____o_965.png
+2024-12-12T12:20:32Z,geovane.maia@grupoboticario.com.br,"Geovane Maia De Oliveira","Geovane Maia - 68043",SysPDV,"Limpando a fila de impressão do Spooler","Peguei um caso agora em que a cliente tinha 3142 impressões pendentes na fila de impressão no Spooler do Windows, e toda vez que era aberta a fila de impressão, a maquina travava, pela quantidade de impressões pendentes, a solução foi limpara a fila de impressão diretamente na pasta de controle do Spooler, gerei um PDF com o passo a passo para limpar a fila de impressão diretamente na pasta de impressão do Windows.",https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F084U28F8TD/limpar_fila_de_impress__o.pdf
+2024-12-12T19:08:35Z,geovane.maia@grupoboticario.com.br,"Geovane Maia De Oliveira","Geovane Maia - 68043",SysPDV,"Erro na importação de Pré-venda","No registro 03, vem algumas informações, dentre elas: Finalizadora e plano de pagamento. O que motiva o erro é a falta do cadastro de Plano de pagamento + Cadastro na finalizadora.
+
+No caso abaixo, a finalizadora apontada no arquivo de pré-venda é a 004 + Plano de pagamento 004, verificamos que no cadastro da finalizadora não está atrelado o plano de pagamento, logo, no log do SyspdvService, apresenta o erro: REGISTRO NAO LOCALIZADO.
+
+Porém, ao corrigir o cadastro de finalizadora inserindo o plano de pagamento, o erro não acontece e a pré-venda é importada sem erros.
+Finalizadora + Plano de Pagamento","https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F08596L3XPB/pre.png, https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F084PT01DPY/pre2.png"
+2024-12-13T15:25:18Z,gabriel.luan@grupoboticario.com.br,"Gabriel Luan Damascena Beserra","Gabriel Luan - 68020",SysPDV,"Rejeição na Emissão de NFCe - Motivo: Não foi possível concluir a operação solicitada. O Autorizador devolveu a seguinte mensagem: Classe n?o registrada, ClassID:","Boa tarde pessoal,
+
+Erro: ""Motivo: Não foi possível concluir a operação solicitada. O Autorizador devolveu a seguinte mensagem: Classe n?o registrada, ClassID""
+
+Esse erro ocorre pois o PDV não está conseguindo realizar a assinatura da NFCe através do certificado digital, quais são os procedimentos para corrigir o problema?
+
+• Instalar o dependencies e tecnoaccount mais atuais no PDV e no Servidor:
+• Instalar o certificado digital A1 no PDV e Servidor.
+• Configurar o certificado digital na Rotina Integração NFe/NFSe no Servidor.
+Feito isso, é só reiniciar o PDV e tentar uma nova emissão.
+
+Ótima sexta!","https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F084YCHCVHT/erro.png, https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F0851581E67/autoriza____o.png"
+2024-12-17T15:26:08Z,Yang.Y.Lima@grupoboticario.com.br,"Yang Yuri De Lima","Yang - 68069",SysPDV,"SysPDVWeb - Problema na sincronização com a loja.","Boa tarde pessoar!
+
+Passando aqui rapidinho para falar sobre um problema que apresentou recente na comunicação com entre SysPDV e SysPDVWeb.
+O problema dá-se quanto a instalação do Client é realizada e configurada, no painel de monitoramento de loja no WEB mostra a loja Online porém não atualiza a versão do Client de comunicação.
+Esse erro está ocorrendo pois na utilização da instalação do EXE de 32Bits não está conseguindo realizar a atualização para o 64Bits (Isso era feito de forma interna e por isso não tínhamos esse conhecimento).
+Dessa forma caso forem realizar nesses próximos dias reinstalações nesse componente, por gentileza validar o SO do cliente e atualizar com o instalador conforme.
+Não houve necessidade de criar tarefa, pois já está no radar do pessoal do WEB.
+
+Disponibilizado os instaladores no link abaixo:
+https://drive.google.com/drive/folders/1h2zhirI6cADtfmKlj4YdS-0MJXbljHkk?usp=drive_link",https://grupoboticario.enterprise.slack.com/files/U01LHPMDA3C/F08529L2EK1/image.png
+2024-12-18T19:16:27Z,geovane.maia@grupoboticario.com.br,"Geovane Maia De Oliveira","Geovane Maia - 68043",SysPDV,"Compartilhando Funcinalidades","Fala meus Lindos, Compartilhando aqui com vocês, alguns Bats que criei para agilizar determinadas Operações.
+
+MFE VERMELHO (Inicia o Serviço do Comunicador)
+CleanImpressora (Limpa a fila de impressão do Spooler do Windows)
+Restart-sitef (Para e inicia os serviços da VPN Lyra e Sitef)
+Reinicia_Serviço_WebClient (Reinicia o serviço do Web Client)",https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F086DBM365N/bats.zip
+2024-12-20T20:14:32Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"'NAN' is not a valid floating point value for field 'PROPRCSUG'","Boa tarde!
+Esse erro estava ocorrendo na hora de emitir uma nota fiscal de devolução de venda de cupom, na rotina de entrada própria, foi visto que cupom e xml estavam ok, mas ao verificar nos itens, foi visto que na coluna itens emb, tinha um item com qnt zerada, logo ao ele fazer o calculo itens emb * qnt emb não conseguia calcular, pois zero multiplicado por qualquer número é zero, ao verificar no cadastro de produto, foi visto que não estava preenchido, conforme mostra o print, após preencher e refazer a nota emitiu sem problema.","https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F0862LDBVMZ/erro_proprcsug.png, https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F085ZTVP8AH/produto_problema2.png"
+2024-12-26T19:35:11Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Erro: O serviço SysPDVService em Computador local foi iniciado e interrompido. Alguns serviços são interrompidos automaticamente se não estiverem sendo usados por outros serviços ou programas.","Boa tarde!
+Esse erro vem ocorrendo nas builds mais atuais ao tentar iniciar/reiniciar serviço do syspdvservice, dando a entender que o problema é algo no windows/máquina, não deixando iniciar assim afetando nas rotinas que utilizam dele, principalmente a rotina de distribuição nfe/mobile , já existe uma tarefa em aberto , Nº 1295831 , no momento o paliativo é renomear executável do SysPDVService.exe para SysPDVServiceOld.exe que fica em C:\Syspdv\Servico e após renomear colocar um de uma build mais anterior, no caso o que funcionou comigo foi o da build 33448, após substituir só iniciar novamente o serviço via services.",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F0878AB6N8G/1734520581295.png
+2025-01-03T15:12:50Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Erro: Não existe Produto para esse relacionamento!","Boa tarde!
+Erro ocorre na abertura do inventário, esse foi um caso bem especifico, não localizei histórico do erro, vou deixar registrado mesmo a solução sendo simples, basicamente todos os produtos do cliente, por algum motivo , não estavam marcados para ""controlar estoque"" logo quando vai abrir inventário e ele verifica que nenhum produto controla estoque, da o erro, após marcar em um produto, permitiu abrir normalmente o inventário.
+
+Caso precise saber qual coluna é a de controlar estoque é a PROCTREST
+
+Caso queira aplicar comando para colocar todos produtos para controlar estoque
+
+UPDATE PRODUTO SET PROCTREST = 'S'",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F0876P88JR1/1735915873491.png
+2025-01-06T14:42:01Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",SysPDV,"Erro ao enviar NF-e: Não foi possível realizar a conexão com Servidor de Licença. Emitente: 02558166000153 e Software House: 02582024000121","Bom dia!
+Erro ocorria ao emitir NF-e de saída, esse erro pode ser muita coisa, vou deixar registrado o que resolveu no meu caso, ao verificar os logs em C:\Syspdv\Nfe\Log\LicenseLog o arquivo LicenseX, visto que estava retornando o erro abaixo.
+
+06/01/2025,09: 59 : 14 :073 spdLicenseNFe: Iniciando validao de licença via API
+06/01/2025,09: 59 : 14:074 spdLicenseNFe: Checando se os parâmetros estão configurados
+06/01/2025,09: 59 : 14:086 spdLicenseNFe: Verificando se o arquivo de licença spdLicenseNFe.dat já existe.
+06/01/2025,09: 59 : 14:095 spdLicenseNFe: Iniciando geração do arquivo de licença.
+06/01/2025,09: 59 : 14:103 spdLicenseNFe: Realizando consulta na API para obter a situação da licença do cliente: CPFCNPJ: 02558166000153 CPFCNPJSH: 02582024000121
+06/01/2025,09: 59 : 14:125 spdLicenseNFe: Exception ao realizar a consulta na API, Erro: 0 Erro de HTTP [EElHTTPSConnectionShutdownError]: Código 96260 - (SB_SOCKET_ERROR_INVALID_ADDRESS) Invalid address
+06/01/2025,09: 59 : 14:127 spdLicenseNFe: Sem comunicação com a API, validando a licença localmente
+06/01/2025,09: 59 : 14:140 spdLicenseNFe: Não foi possível realizar a conexão com Servidor de Licença. Emitente: 02558166000153 e Software House: 02582024000121.
+
+Ao acessar o link de api da tecnospeed no cliente, retornou OK
+
+https://api-licensecomponentes.tecnospeed.com.br/v1/status
+
+outro link para teste
+
+http://tecno-services.com:8081/status
+
+Mas mesmo sem bloqueio aparente, o arquivo de licença nem era gerado, o cliente utiliza o servidor via rede WI-FI com IP Fixo, ao verificar as configurações de ipv4 foi visto que estava sem DNS, foi perguntado se poderia ser colocado o DNS do google , 8.8.8.8 e 8.8.4.4 após ajuste, ao reenviar nfe, gerou sem problemas o arquivo de licença e não ocorreu mais o erro.
+
+PS: Caso os links de consulta da tecnospeed não retornem ok, e na sua máquina retorne ok, pode indicar o cliente a validar com sua provedora de internet o bloqueio ou técnico de rede, pois é algum bloqueio por parte do cliente.
+
+Caso esteja com esse erro e queira saber outros processos que podem ser feitos vou deixar o ticket 1399982 que consta alguns processos feito antes.",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F08708JJQ5D/spd.png
+2025-01-06T14:52:21Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",varejofacil,"[Loja=9,Transacao={Sequencial=005069,Caixa=002,Data=04/01/2025}],Tipo=K Não foi encontrado a venda deste estorno","Bom dia!
+
+Inconsistência nas vendas no varejofacil
+
+[Loja=9,Transacao={Sequencial=005069,Caixa=002,Data=04/01/2025}],Tipo=K Não foi encontrado a venda deste estorno
+
+Para correção paliativa basta consultar o sequencial na tabela TRANSAÇÃO no server e alterar o TRNTIP de K para H e também o TRNLOGWEB de T para A, assim a transação vai subir novamente para o varejofacil resolvendo a inconsistência.
+
+Esse erro tinha uma tarefa em aberto VF-38874, mas foi cancelada, então caso pegue algum caso recente, e cliente esteja atualizado no varejofacil e syspdv, é interessante enviar para sustentação para correção definitiva.",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F087ET1G9HQ/erro.png
+2025-01-13T12:11:54Z,gabriel.luan@grupoboticario.com.br,"Gabriel Luan Damascena Beserra","Gabriel Luan - 68020",varejofacil,"Erro ao importar Arquivo OFX",":setaazul: Erro: ""Erro no upload do arquivo. A conta corrente não foi encontrada. Verifique o arquivo OFX - Numero da conta e agencia.
+
+
+:setaazul: Causa: O erro ocorre devido à ausência de Agente correto no cadastro de Conta Corrente , no cadastro de Conta Corrente é necessário que o agente selecionado tenha em seu cadastro o código FEBRABAN respectivo ao banco.
+
+:setaazul: Solução:  Portanto para corrigir o erro é preciso que no cadastro de conta corrente (Financeiro > Cadastro > Conta Corrente) do cliente seja incluindo o agente que possuí o FEBRABAN correto na aba Complemento, caso o agente não esteja cadastro, o mesmo pode ser cadastro na Rotina Agente (Financeiro > Cadastro > Agente) feito esse ajuste é necessário apenas importar novamente o arquivo OFX.","https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F087YLC6VUP/2025-01-13_08_56_34-conta_corrente_-_varejofacil.png, https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F088FMW6YA0/2025-01-13_08_48_21-.png, https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F088FMXKC8L/2025-01-13_08_47_04-concilia____o_conta_corrente_-_varejofacil.png, https://grupoboticario.enterprise.slack.com/files/U03D5BY267L/F088FMZ8USG/2025-01-13_08_14_00-concilia____o_conta_corrente_-_varejofacil.png"
+2025-01-13T20:10:15Z,hiago.lima@grupoboticario.com.br,"Hiago Lima","Hiago Lima - 68057",varejofacil,"Valor do ipi saindo como despesas acessórias na nota fiscal de devolução no VarejoFacil","Boa tarde!
+É um bizuzim que peguei e achei importante compartilhar pois é um detalhe, no caso o problema é que ao fazer a nota de devolução, o valor do ipi sai no campo de despesas acessórias em vez de no campo de ipi, para resolver basta desmarcar a flag ""Destacar IPI como informação complementar"" na hora de fazer a devolução, você desmarca e pode importar os itens , após importar os itens vão vir com valor de ipi no campo ipi.",https://grupoboticario.enterprise.slack.com/files/U03FSJQ4VK5/F088FR9AH7D/vf.png
+2025-01-15T22:02:52Z,Sergio.N.Junior@grupoboticario.com.br,"Sergio Junior","Sergio Nibon - 68068",SysPDV,"Erro na validação de CSRT","CSRT
+A partir de abril de 2025, para a emissão da Nota Fiscal eletrônica – NF-e e Nota Fiscal de Consumidor eletrônica – NFC-e, será validado a informação do identificador do CSRT (tag: idCSRT) e Hash do CSRT (tag: hashCSRT), conforme previsto na Norma de Procedimento Fiscal, NPF nº 063/2012 e Nota Técnica 2018.005.
+O CSRT é um código de segurança alfanumérico (16 a 36 bytes) de conhecimento apenas da Receita Estadual do Paraná e do FORNECEDOR responsável pelo sistema emissor credenciado. Cada FORNECEDOR possuirá um código denominado CSRT que será utilizado para gerar um “hash” com a chave de acesso a ser informado no documento fiscal eletrônico, vinculando a autoria da geração do XML da NF-e para o FORNECEDOR do software.
+
+https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/103202300062.pdf (NPF 062/2023)
+
+Estabelece procedimentos para disciplinar o uso de sistemas de processamento de dados para escrituração fiscal, emissão de documentos fiscais e a sua gestão, e normatizar o controle sobre usuários e fornecedores.
+
+
+Resolutividades
+
+A regra supracitada, entrará em vigor somente a partir de abril de 2025. Mas especificamente nessa situação, por algum motivo, na tabela RESPONSAVEL_TECNICO, o campo RPTIDCSRT fora preenchido com o valor 1, mais como a regra ainda não entrou em vigor na SEFAZ, a automação estava retornando a rejeição do print abaixo.
+
+A resolução para essa situação é apagar o valor do campo RPTIDCSRT, e fazer o reenvio da nota.
+
+https://grupocasamagalhaes.movidesk.com/Ticket/Edit/1403493 (Ticket 1403496)",https://grupoboticario.enterprise.slack.com/files/U75UF86AC/F088NDS4FPY/respons__vel_t__cnico.png
+2025-01-17T15:56:49Z,Manuel.M.Queiroz@grupoboticario.com.br,"Manuel Queiroz","Gleyson Queiroz - 68045",SITEF,"PIX não funciona em nenhum PDV. Timeout, Sem comunicação com SiTef, Cancelada PDV.","OCORRÊNCIA RELATADA: Solicitação de mudança de PSP de Tribanco para Bradesco, devido o Tribanco não estar funcionando. Após a mudança para o Bradesco, o serviço não funcionou em nenhum PDV, apresentando erro de “sem conexão com o Sitef”, caindo por timeout e no relatório do Sitef mostrando “Cancelada PDV”.
+
+PROCEDIMENTO EXECUTADO: Confirmamos todas as configurações e parâmetros tanto no Syspdv quanto no Sitef. Verificamos nos logs que o PDV não recebia o retorno da autorização (apesar dos audits mostrarem que o PSP havia confirmado e enviado), resultando no timeout e na mensagem de “sem conexão com o Sitef”. Informamos ao cliente que o problema era na estrutura de rede. Juntos, iniciamos os testes e, após uma análise minuciosa, descobrimos que o problema estava no roteador. Ao trocar o roteador, o problema foi resolvido.
+
+RESULTADO: O PIX voltou a transacionar em todos os caixas e foi liberado para uso.
+
+Ticket: 1398683",https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F088R6FP16K/transacao_n__o_autorizada.png
+2025-01-20T18:47:58Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Rejeição 202","Rejeição 202 ao enviar NFe.
+
+Visto que nas observações da nota havia um espaço.
+
+Após removido o espaço a nota foi enviada.",https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F0899BZK6G6/rej202.png
+2025-01-21T15:15:27Z,Manuel.M.Queiroz@grupoboticario.com.br,"Manuel Queiroz","Gleyson Queiroz - 68045",SysPDV,"Atualização SysPDV | PDV Linux","Bom dia, Pessoal.
+
+Situação:
+Nessas novas builds do SysPDV ao tentar abrir o instalador com o comando wine, no PDV Linux, está apresentando a seguinte mensagem: ""Este programa não suporta a versão do Windows que seu computador está executando.""
+
+Solução:
+Entrar como sudo su e digitar winecfg, na tela que aparece aba aplicativos, mudar de Windows XP para Windows 10. Depois só executar o instalador novamente.","https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F089L9BR36X/mensagem_de_incompatibilidade.png, https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F089NTH39GU/winecfg.png"
+2025-01-29T17:59:56Z,matheus.w.santos@grupoboticario.com.br,"Matheus Santos","Matheus Wesley - 68038",SysPDV,"Sobre o Decreto nº 36.417/2025","Queridos visando a melhor forma de explicar para o cliente sobre o novo decreto formatei o texto para enviarmos nos tickets por email ou no CHAT.
+
+Sobre o Decreto nº 36.417/2025
+
+O Governo do Ceará atualizou as regras para emissão de documentos fiscais eletrônicos. Confira as principais mudanças:
+
+1. Fim do Cupom Fiscal Eletrônico (CF-e) e uso do Módulo Fiscal Eletrônico (MFE):
+• Quando irá ocorrer?
+    ◦ A partir de 1º de janeiro de 2026, o CF-e e o uso do MFE serão descontinuados no Ceará.
+2. Nota Fiscal ao Consumidor Eletrônica (NFC-e) Obrigatória:
+• Quando irá ocorrer?
+    ◦ A NFC-e será o único documento válido para registrar operações de varejo a partir de 1º de janeiro de 2026.
+3. Período de Transição e Opção:
+• Posso usar meu MFe até quando?
+• Durante o ano de 2025, os contribuintes podem optar por emitir CF-e ou NFC-e.
+    ◦ OBS: Essa liberdade de escolha termina em 31 de dezembro de 2025.
+4. Fique Atento aos Prazos:
+• 1º de fevereiro de 2025: Início da possibilidade de emissão da NFC-e.
+• 1º de janeiro de 2026: Fim do CF-e e obrigatoriedade da NFC-e.
+5. Mantenha-se atualizado:
+• Fale com seu contador sobre o Decreto nº 36.417/2025 para mais detalhes e informações completas.
+Lembre-se: A adaptação às novas regras é crucial para evitar transtornos e garantir a conformidade com a legislação tributária do Estado.
+
+
+Material Complementar:
+• https://grupocasamagalhaes.movidesk.com/kb/pt-br/article/132570/emissao-de-nfc-e-no-estado-do-ceara?ticketId=&q= (SysPDV - Emissão de NFC-e no estado do Ceará (artg))
+• http://imagens.seplag.ce.gov.br/PDF/20250123/do20250123p01.pdf (Diário Oficial do Estado)
+",https://grupoboticario.enterprise.slack.com/files/U02KRP2S3DF/F08AXV490J0/diario_oficial_do_estado.pdf
+2025-01-30T20:41:44Z,Yang.Y.Lima@grupoboticario.com.br,"Yang Yuri De Lima","Yang - 68069",SysPDV,"Rejeição: Emissor não habilitado da NF-e/NFC-e.","Foi realizada a configuração para emissão de NFCe no cliente, porém estava apresentando rejeição: Emissor não habilitado da NF-e/NFC-e.
+Após validações foi identificado que existia uma pendência referente ao cliente pelo nosso lado, pois é necessário que seja realizado o reconhecimento do Fornecedor, para isso é necessário o documento Termo de Autorização em PDF.
+Deve ser encaminhado o documento para liberação de utilização de emissão NFe/NFCe é :mailto:admcanal@casamagalhaes.com.br
+
+Obs: Essa informação cabe para os clientes do estado do Paraná PR.
+Abaixo também um print de um termo que inclusão do cliente na base da Sefaz, esse documento é o que deve ser encaminhado para o email solicitado.
+Após confirmação de Reconhecimento, o cliente realizou o teste e emitiu NFC-e com sucesso.","https://grupoboticario.enterprise.slack.com/files/U01LHPMDA3C/F08B006PE2Z/imagem_do_whatsapp_de_2025-01-27_a_s__09.33.17_1fba01cd.jpg, https://grupoboticario.enterprise.slack.com/files/U01LHPMDA3C/F08B2QJJMJN/1738181023211.png"
+2025-02-03T13:00:17Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Impressão de cupom","Compartilhando! É possível no Syspdv não imprimir o cupom ou mandar por e-mail, segue imagens da configuração.","https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08BDR804BX/image__74_.png, https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08BVBDN6AD/image__75_.png"
+2025-02-03T17:55:14Z,geovane.maia@grupoboticario.com.br,"Geovane Maia De Oliveira","Geovane Maia - 68043",SysPDV,"Reinstalação Syspdv Service","Este Batch é projetado para facilitar a reinstalação do serviço **SysPDVService**  no sistema. Ele automatiza o processo de parada, exclusão e reinstalação do serviço, garantindo que você tenha uma instalação limpa e funcional.
+
+---------------------
+
+:clipboard: Funcionalidades
+
+- Parar o Serviço**: Finaliza o processo em execução do SysPDVService.
+
+- Deletar o Serviço**: Remove o serviço do sistema, se ele existir.
+
+- Instalar o Serviço Novamente**: Reinstala o SysPDVService a partir do diretório especificado.
+
+- Iniciar o Serviço**: Inicia o serviço reinstalado.",https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F08BX6P8RB3/syspdv_service.bat
+2025-02-04T19:05:03Z,Giovanni.S.Souza@grupoboticario.com.br,"Giovanni Souza","Giovanni Sena",SysPDV,"Emissão de boleto ( Fator de vencimento ) a parti 25/02/2025.","Gostaria de compartilhar ao qual os clientes que tenham alguma configuração de boleto :icon_mooz_boleto: do Cobre Bem que foi descontinuado. Para quem não estava no atendimento nesse período, o aviso foi disponibilizado no site oficial da empresa, em 01/12/2020, mantendo o suporte até 31/03/2021 e encerrando oficialmente, os serviços do CobreBemX.
+
+Apesar das licenças continuar funcionando normalmente para os clientes antigos, qualquer erro mediante as licenças geradas ou rejeição de remessas do próprio banco não tem como ajustar.
+
+Nesse cenário, muitas empresas optaram por continuar usando o Cobre Bem até o momento em que isso não fosse mais possível, e esse momento esta próximo, a partir do dia 25/02/2025 não será mais possível emitir boletos usando o Cobre Bem.
+
+O problema se concentra na linha digitável do boleto :boletoscanner: e consequentemente, em seu código de barras. Esse código é composto por uma concatenação de informações, e a informação em questão é o fator de vencimento.
+
+O fator de vencimento é basicamente uma diferença entre datas, que para ser calculado usa como base a data de 07 de outubro de 1997, em resumo e quantos dias após a data base aquele boleto irá vencer. Porém, existe uma particularidade, o número do fator de vencimento não pode ter mais do que quatro dígitos, por conta disso, em fevereiro de 2025 essa contagem vai chegar em “9999” e por regra do Banco Central essa data terá que ser reiniciada a parti do dia 25/02/2025, mas o Cobre Bem não segue essa regra.
+
+Podendo ser visto no banco de dados na tabela CONTA_CORRENTE no campo CTCENDARQ com o diretório das licenças e quais contas estão associadas.
+
+:atenção-atenção: Observação: Orientar os clientes que possuem Cobre Bem a migra ao Boleto Direto e verificar com antecedência se seus banco são homologados junto ao nosso setor comercial. O Boleto Direto não possui a mesma quantidade de banco homologados anteriormente pelo Cobre Bem, podendo seus bancos não está homologados e ter tempo hábil de solicitar a homologação junto ao Boleto Direto. :atenção-atenção:",https://grupoboticario.enterprise.slack.com/files/U1DLES43F/F08BU3P4SLC/iboconsole_7ecengzug9.png
+2025-02-05T19:42:10Z,artur.ytalo@grupoboticario.com.br,"Artur Ytalo Moreira De Lima","Artur Ytalo - 68075",SysPDV,"syspdv - ao importar carga do syspdv pro mgv info nutricional some","@channel Boa tarde lindas, lindos e Sousa Mota! Tudo bem com vocês?!
+
+Peguei um recente problema que a cliente reclamou que assim que ela desce a carga do Syspdv Server para as balanças em formato de TXT e ao importar esse arquivo ITENSMGV.txt no MGV as informações nutricionais simplesmente somem.
+
+OBS: As informações nutricionais, a cliente faz diretamente pelo MGV.
+
+Detalhe o Syspdv Server ele não exporta informações nutricionais em formato de TXT ou creio que em nenhuma forma ele consegue exportar esse tipo de informação, sabendo disso, fiz a seguinte validação no MGV.
+
+Foi validado em configurações na aba opções de cadastro lá no final da página a opção de ""campos para ignorar na importação do ITENSMGV.TXT
+
+Selecionado apenas a informação nutricional que era a que estava sendo limpada na importação do arquivo ITENSMGV.TXT pois o Syspdv Server não envia essa informação, logo o MGV entendia que não existia e limpava.
+
+Realizado umas cargas e conferido no MGV, as informações nutricionais ainda permaneciam.",https://grupoboticario.enterprise.slack.com/files/U050Y3LKSN4/F08BYHC4RKM/info_nutricional.png
+2025-02-05T19:54:03Z,Gabryelle.B.Santos@grupoboticario.com.br,"Gabryelle Santos","Gabryelle Bezerra 68006 (Tronco 31228)",SITEF,"Tef não esta realizando venda na modalidade Debito","• Processo realizado:
+• Acessar sitef com os dados da loja do cliente:
+• - Ir em utilitários > Configurador Sitef > Configurações extra e clicar em  desabilitar configurações para pagamentos contactless. 
+• -Enviar uma nova carga de tabelas para o modulo da rede
+• -Renomear a pasta clisitef no pdv.
+• após testar a primeira venda após passo a passo,  pdv recebera a carga de tabelas .
+• 
+• em seguida a venda será autorizada com sucesso.
+• obs.: Alguns modelo de tef da rede esta ocorrendo esse problema, após realizar processo acima, a venda é autorizada com sucesso. ",https://grupoboticario.enterprise.slack.com/files/U01ET90SJ1W/F08BYJMKKKM/configura____o_para_pagamentos_contactless.png
+2025-02-14T15:49:58Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Erro no REENVIO de nota","Situação
+
+Ao reenviar nota fiscal retorna a mensagem:
+
+""Opção não disponível para esta configuração!"".
+
+Se fizer a nota e enviar normalmente não ocorre o erro, mas se precisar ir na integração Nfe e clicar em reenviar, o mesmo ocorre.
+
+Solução:
+
+Validar se o parâmetro 216 do server está ""0 - Syspdv"", senão, deve ser alterado.",https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08DRSC7TK3/image__1_.png
+2025-02-17T15:40:06Z,Manuel.M.Queiroz@grupoboticario.com.br,"Manuel Queiroz","Gleyson Queiroz - 68045",SysPDV,"Ao tentar vender um produto com multiplicação ou cancelar um item individualmente, o Self-Checkout apresenta a mensagem de erro: ""Não existe este produto para cancelar!"".","A causa do problema é uma regra de negócio da Scanntech que impede a multiplicação ou cancelamento individual de produtos em oferta.  A promoção de descontos aplicada a esses itens não exige CPF e funciona com descontos em cada item, o que exige o registro individual de cada produto. Portanto, a multiplicação é bloqueada para evitar conflitos com a oferta ativa, e o cancelamento individual não é permitido devido à mesma razão.",https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F08DP1FPMFU/screenshot_1.png
+2025-02-19T11:07:51Z,geovane.maia@grupoboticario.com.br,"Geovane Maia De Oliveira","Geovane Maia - 68043",SysPDV,"Site de versões não esta baixando a Build.","Segue bat que realiza a geração do link de acordo com a Build e Versão desejada, depois é só copiar o link e usar no navegador !",https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F08EP2VAVJL/baixabuild.bat
+2025-02-21T12:02:08Z,iasmyn.fernandes@grupoboticario.com.br,"Iasmyn Fernandes","Iasmyn Fernandes - 68112",SysPDV,"Botão Incluir no cadastro de produto","Na rotina Sistema > Parâmetro > Syspdv Server, o parâmetro 78 - Utiliza CNPJ/CPF como código, caso essa opção esteja marcado não aparecerá o botão de Incluir no cadastro do Servidor do Syspdv.
+Então caso o cliente deseje ter o botão de Incluir é preciso marcar NÃO nesse parâmetro.
+
+Peguei um caso que a cliente já havia entrado em contato 3 vezes e havíamos informado que não tinha mudar essa informação, apenas cadastrar cliente pelo Varejo ou PDV, mas é possível desmarcando essa opção.","https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F08EEJMK31Q/parametro_78.png, https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F08ESKP6UF3/com_op____o.png, https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F08EGRR2CLC/sem_op____o.png"
+2025-02-21T12:09:13Z,iasmyn.fernandes@grupoboticario.com.br,"Iasmyn Fernandes","Iasmyn Fernandes - 68112",SysPDV,"Botão Incluir no cadastro de Cliente","Na rotina Sistema > Parâmetro > Syspdv Server, o parâmetro 78 - Utiliza CNPJ/CPF como código, caso essa opção esteja marcado não aparecerá o botão de Incluir no cadastro do Servidor do Syspdv.
+Então caso o cliente deseje ter o botão de Incluir é preciso marcar NÃO nesse parâmetro.
+
+Peguei um caso que a cliente já havia entrado em contato 3 vezes e havíamos informado que não tinha mudar essa informação, apenas cadastrar cliente pelo Varejo ou PDV, mas é possível desmarcando essa opção.
+
+Refiz a trading para corrigir o assunto, que havia errado anteriormente   ","https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F08EBJSDSAZ/parametro_78.png, https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F08EGSJSUTW/com_op____o.png, https://grupoboticario.enterprise.slack.com/files/U03802EN83E/F08EGSK6H0U/sem_op____o.png"
+2025-02-25T20:38:14Z,Manuel.M.Queiroz@grupoboticario.com.br,"Manuel Queiroz","Gleyson Queiroz - 68045",SITEF,"Pix por aproximação","A Fiserv informou que a atualização da clisitef (dlls) é suficiente para ativar a funcionalidade de aproximação do Pinpad. Não há necessidade de nenhuma intervenção na automação.
+
+Quando o QR Code for exibido, a clisitef enviará o comando para ativar a aproximação do Pinpad, dando ao cliente a opção de aproximar ou ler o QR Code.
+
+O piloto estava previsto para janeiro de 2025, e a implementação em produção era para fevereiro (mês atual). Não sei se já estamos recebendo esse tipo de solicitação, mas caso a gente receba o processo é esse, bem simples.",https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F08F1383C9Z/image.png
+2025-03-13T20:57:53Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Erro no envio de carga access to external file / FUNCIONARI_E / is denied by server administrator","Necessário reinstalar o Firebird, apagando a pasta. Não esquecer de criar o usuário.",https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08HFFD0GUE/carga.png
+2025-03-27T13:15:42Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Gift Card (Cartão presente) Syspdv","Geralmente quando algum cliente solicita trabalhar com Gift Card a nossa resposta é que o Syspdv não trabalha.
+
+De fato não tem rotina para isso no Syspdv, mas temos  o cliente grupo carvalho que tem integração com a Incomm que é uma empresa específica disso. A integração já funciona normalmente lá juntamente com o Syspdv.
+
+Só deixando a dica, esse é o site deles https://www.todoincomm.com/ para o cliente fazer o contato. A integração geralmente é com eles.",https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08KP0MGASF/arquivo.txt
+2025-04-02T11:43:36Z,geovane.maia@grupoboticario.com.br,"Geovane Maia De Oliveira","Geovane Maia - 68043",SysPDV,"ERRO AO TENTAR LOGAR COM LOGMEIN","Em alguns casos ao tentar logar na maquina do cliente vi Logmein, não é possível reiniciar o aplicativo para que o mesmo seja executado como serviço (Administrador) as vezes não inicia nem como controle remoto normal, Porém o chat do lado esquerdo da aplicação fica disponível para o analista e para o cliente, nesses casos pode-se realizar a geração de um novo Pin via Link, e enviar no próprio chat aberto anteriormente no Logmein, e dessa forma o cliente baixa o aplicativo e executa novamente, e o mesmo volta a liberar a conexão.","https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F08KZFY7ZKR/screenshot_1.png, https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F08LCBT0Q4V/screenshot_2.png"
+2025-04-04T13:50:52Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",SysPDV,"Paliativo rejeição 629","Segue comando para verificar quais produtos estão com diferença e precisam ser corrigidos na ITEM_NOTA_FISCAL para não precisar achar no olho:
+
+
+SELECT * FROM item_nota_fiscal
+WHERE
+    ABS(INFQTDEMB * INFVLREMB - INFVLRTOT) > 0.01
+    AND NFSCTR = '0000000382';",https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08LL5BE5QW/arquivo.txt
+2025-04-07T13:32:01Z,geovane.maia@grupoboticario.com.br,"Geovane Maia De Oliveira","Geovane Maia - 68043",SysPDV,"ATIVAR/DESATIVAR BIOMETRIA","Este script em batch é projetado para gerenciar a biometria em um sistema que utiliza bancos de dados Firebird. Ele permite que você desative ou restaure a biometria de forma simples e eficaz.",https://grupoboticario.enterprise.slack.com/files/U02EAPEAX3J/F08M0QBG0R3/biometria.bat
+2025-04-11T18:13:28Z,Manuel.M.Queiroz@grupoboticario.com.br,"Manuel Queiroz","Gleyson Queiroz - 68045",SITEF,"Relatório de Recargas | Sitef Express","Como podem ver em anexo, o relatório de recargas de celular do Sitef Express, está com um bug, onde não retorna o resumo das transações de recarga. A solução já está em andamento, mas sem prazo definido, portanto não foi gerada nenhuma ocorrência. A solução paliativa é acessar o segundo link, o de ""contingência"", o link padrão é o link 1, mas nesses casos que o cliente quiser ver o resumo terá que usar o link 2.
+
+https://sitefexpress1.softwareexpress.com.br/sitefweb/pages/inicial.zeus
+https://sitefexpress2.softwareexpress.com.br/sitefweb/pages/inicial.zeus",https://grupoboticario.enterprise.slack.com/files/U1993J4GY/F08MSQZV077/screenshot_1.png
+2025-04-25T12:21:26Z,Gerivan.P.Araujo@grupoboticario.com.br,"Gerivan Araujo","Gerivan / 68042",varejofacil,"Não foi possível carregar os títulos do cliente","Ao dar baixa em títulos no PDV com integração com varejo retorna a mensagem: ""Não foi possível carregar os títulos do cliente"", mesmo tendo títulos em aberto para ser dada baixa no varejo.
+
+Essa é uma resolução bem superficial pois ainda estou aprendendo, foi baseada em uma tratativa da @Michelle Silva - Atendimento 68085 em um ticket recente, créditos a ela!
+
+Checklist sugestivo:
+
+1. Verificar se de fato a consulta de cliente está de fato pelo varejo nos parâmetros do Syspdv.
+2. Verificar se a loja do varejo está online.
+3. Nos parâmetros do Syspdv, verificar a aba Varejo Fácil para conferir se o link está correto.
+4. Validar se o problema nos títulos ocorre em todos os caixas ou somente em um deles, assim dá para saber se o problema é isolado daquele caixa ou geral.
+5. Ir em Financeiro > Contas a receber e clicar em ""Pendências"" para saber se tem algo pendente na rotina.
+Caso tenham mais sugestões podem criar os pontos 7, 8, 9 na conversa!","https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08PFPC7C9L/1.png, https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08Q21GSAM7/2.png, https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08PMTX6929/3.png, https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08PT4Y504S/4.png, https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08QCTG6S64/5.png, https://grupoboticario.enterprise.slack.com/files/UDKJ2C0CS/F08QCTHG7ME/6.png"
